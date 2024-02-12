@@ -90,13 +90,13 @@ public class departmentController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         this.showDepartment();
     }
-    @FXML
+
     public void btnClickBack(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../FXML/HomePage/MenuSite.fxml")));
-            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("FXML/HomePage/MenuSite.fxml")));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
     public void btnHandleButton(ActionEvent event) {

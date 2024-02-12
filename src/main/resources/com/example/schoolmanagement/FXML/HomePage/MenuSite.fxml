@@ -10,130 +10,91 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #014165;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.homeSiteController">
-   <children>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="800.0" spacing="120.0">
-         <children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="800.0" style="-fx-background-color: #014165;" xmlns="http://javafx.com/javafx/20.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmanagement.homeSiteController">
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="800.0" spacing="120.0">
+      <ImageView fitHeight="100.0" fitWidth="100.0">
+         <HBox.margin>
+            <Insets left="20.0"/>
+         </HBox.margin>
+         <Image url="@../../images/download.png"/>
+      </ImageView>
+      <Label alignment="CENTER" prefHeight="40.0" prefWidth="340.0" text="School Management System" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="25.0"/>
+         </font>
+      </Label>
+   </HBox>
+   <VBox layoutY="100.0" prefHeight="500.0" prefWidth="800.0" spacing="20.0">
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="800.0" spacing="20.0">
+         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
             <ImageView fitHeight="100.0" fitWidth="100.0">
-               <image>
-                  <Image url="@../../images/download.png" />
-               </image>
-               <HBox.margin>
-                  <Insets left="20.0" />
-               </HBox.margin>
+               <Image url="@../../images/faculty1.png"/>
             </ImageView>
-            <Label alignment="CENTER" prefHeight="40.0" prefWidth="340.0" text="School Management System" textFill="WHITE">
-               <font>
-                  <Font name="System Bold Italic" size="25.0" />
-               </font>
-            </Label>
-         </children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnClickFaculty" prefHeight="50.0"
+                    prefWidth="150.0" text="Manage Faculty"/>
+         </VBox>
+         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
+            <ImageView fitHeight="100.0" fitWidth="100.0">
+               <Image url="@../../images/department.png"/>
+            </ImageView>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnClickDepartment" prefHeight="50.0"
+                    prefWidth="150.0" text="Manage Department"/>
+         </VBox>
+         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
+            <ImageView fitHeight="100.0" fitWidth="100.0">
+               <Image url="@../../images/students.png"/>
+            </ImageView>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnClickStudent" prefHeight="50.0"
+                    prefWidth="150.0" text="Manage Student"/>
+         </VBox>
       </HBox>
-      <VBox layoutY="100.0" prefHeight="500.0" prefWidth="800.0" spacing="20.0">
-         <children>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="800.0" spacing="20.0">
-               <children>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
-                     <children>
-                        <ImageView fitHeight="100.0" fitWidth="100.0">
-                           <image>
-                              <Image url="@../../images/faculty1.png" />
-                           </image>
-                        </ImageView>
-                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnClickFaculty" prefHeight="50.0" prefWidth="150.0" text="Manage Faculty" />
-                     </children>
-                  </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
-                     <children>
-                        <ImageView fitHeight="100.0" fitWidth="100.0">
-                           <image>
-                              <Image url="@../../images/department.png" />
-                           </image>
-                        </ImageView>
-                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnClickDepartment" prefHeight="50.0" prefWidth="150.0" text="Manage Department" />
-                     </children>
-                  </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
-                     <children>
-                        <ImageView fitHeight="100.0" fitWidth="100.0">
-                           <image>
-                              <Image url="@../../images/students.png" />
-                           </image>
-                        </ImageView>
-                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnClickStudent" prefHeight="50.0" prefWidth="150.0" text="Manage Student" />
-                     </children>
-                  </VBox>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
-               <children>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
-                     <children>
-                        <ImageView fitHeight="100.0" fitWidth="100.0">
-                           <image>
-                              <Image url="@../../images/add-friend.png" />
-                           </image>
-                        </ImageView>
-                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnClickEnrollStudent" prefHeight="50.0" prefWidth="150.0" text="Enroll Student" />
-                     </children>
-                  </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
-                     <children>
-                        <ImageView fitHeight="100.0" fitWidth="100.0">
-                           <image>
-                              <Image url="@../../images/execution.png" />
-                           </image>
-                        </ImageView>
-                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnClickCourse" prefHeight="50.0" prefWidth="150.0" text="Manage Course" />
-                     </children>
-                  </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
-                     <children>
-                        <ImageView fitHeight="100.0" fitWidth="100.0">
-                           <image>
-                              <Image url="@../../images/teacher.png" />
-                           </image>
-                        </ImageView>
-                        <Button alignment="TOP_CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#btnClickTeacher" prefHeight="50.0" prefWidth="150.0" text="Manage Teacher" />
-                     </children>
-                  </VBox>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
-               <children>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
-                     <children>
-                        <ImageView fitHeight="100.0" fitWidth="100.0">
-                           <image>
-                              <Image url="@../../images/delegation (1).png" />
-                           </image>
-                        </ImageView>
-                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnClickAssignCourse" prefHeight="50.0" prefWidth="150.0" text="Assign Course" />
-                     </children>
-                  </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
-                     <children>
-                        <ImageView fitHeight="100.0" fitWidth="100.0">
-                           <image>
-                              <Image url="@../../images/plus.png" />
-                           </image>
-                        </ImageView>
-                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnClickAccountTeacher" prefHeight="50.0" prefWidth="150.0" text="Create Account Teacher" />
-                     </children>
-                  </VBox>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
-                     <children>
-                        <ImageView fitHeight="100.0" fitWidth="100.0">
-                           <image>
-                              <Image url="@../../images/plus.png" />
-                           </image>
-                        </ImageView>
-                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnClickAccountStudent" prefHeight="50.0" prefWidth="150.0" text="Create Account Student" />
-                     </children>
-                  </VBox>
-               </children>
-            </HBox>
-         </children>
-      </VBox>
-   </children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
+            <ImageView fitHeight="100.0" fitWidth="100.0">
+               <Image url="@../../images/add-friend.png"/>
+            </ImageView>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnClickEnrollStudent"
+                    prefHeight="50.0" prefWidth="150.0" text="Enroll Student"/>
+         </VBox>
+         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
+            <ImageView fitHeight="100.0" fitWidth="100.0">
+               <Image url="@../../images/execution.png"/>
+            </ImageView>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnClickCourse" prefHeight="50.0"
+                    prefWidth="150.0" text="Manage Course"/>
+         </VBox>
+         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
+            <ImageView fitHeight="100.0" fitWidth="100.0">
+               <Image url="@../../images/teacher.png"/>
+            </ImageView>
+            <Button alignment="TOP_CENTER" contentDisplay="RIGHT" mnemonicParsing="false"
+                    onAction="#btnClickTeacher" prefHeight="50.0" prefWidth="150.0" text="Manage Teacher"/>
+         </VBox>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
+            <ImageView fitHeight="100.0" fitWidth="100.0">
+               <Image url="@../../images/delegation (1).png"/>
+            </ImageView>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnClickAssignCourse"
+                    prefHeight="50.0" prefWidth="150.0" text="Assign Course"/>
+         </VBox>
+         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
+            <ImageView fitHeight="100.0" fitWidth="100.0">
+               <Image url="@../../images/plus.png"/>
+            </ImageView>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnClickAccountTeacher"
+                    prefHeight="50.0" prefWidth="150.0" text="Create Account Teacher"/>
+         </VBox>
+         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0">
+            <ImageView fitHeight="100.0" fitWidth="100.0">
+               <Image url="@../../images/plus.png"/>
+            </ImageView>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnClickAccountStudent"
+                    prefHeight="50.0" prefWidth="150.0" text="Create Account Student"/>
+         </VBox>
+      </HBox>
+   </VBox>
 </AnchorPane>

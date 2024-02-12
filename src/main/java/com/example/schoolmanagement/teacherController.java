@@ -1,6 +1,5 @@
-package com.example.schoolmanagement.Teacher;
+package com.example.schoolmanagement;
 
-import com.example.schoolmanagement.databaseConnection;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -88,7 +87,7 @@ public class teacherController implements Initializable {
 
     @FXML
     void btnClickBack(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../FXML/HomePage/MenuSite.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("FXML/HomePage/MenuSite.fxml")));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
