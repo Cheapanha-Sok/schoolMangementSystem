@@ -1,4 +1,4 @@
-package com.example.schoolmanagement.Teacher;
+package com.example.schoolmanagement;
 
 public class TeacherModel {
     private int teacherId;

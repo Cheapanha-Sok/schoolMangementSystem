@@ -1,6 +1,5 @@
-package com.example.schoolmanagement.Teacher;
+package com.example.schoolmanagement;
 
-import com.example.schoolmanagement.databaseConnection;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
